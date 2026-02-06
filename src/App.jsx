@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { Card } from './Components/Card/card'
+import Section_1 from './Components/Home_Page/Section_1/section_1'
+import Section_2 from './Components/Home_Page/Hooks/section_2'
 
 function App() {
 
@@ -68,11 +70,43 @@ function App() {
   ]
 
   Card_data.forEach((item) => {
-    console.log(item);
+    // console.log(item);
   })
+
+  const Users = [
+    {
+      name: "Jatin Jethava",
+      intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+      image: "water_fall.jpg"
+    },
+    {
+      name: "Yasdip Jetahava",
+      intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+      image: "tree.jpg"
+    },
+    {
+      name: "Kalpesh jethava",
+      intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+      image: "moutain_town1.jpg"
+    },
+    // {
+    //   name: "chetan Jethava",
+    //   intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+    //   image: "john_wick.png"
+    // },
+    // {
+    //   name: "ajay Jethava",
+    //   intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+    //   image: "miracle.jpg"
+    // }
+  ];
 
   return (
     <>
+
+      {/* <Section_1 user={Users} /> */}
+      <Section_2 />
+
       {/* <div className='container'>
         <Card user={"Suzume"} image={"suzume.jpg"} />
         <Card user={"Banana"} image={"banana.avif"} />
@@ -81,7 +115,7 @@ function App() {
         <Card user={"Building"} image={"building.jpg"} />
       </div> */}
 
-      <div className='container'>
+      {/* <div className='container'>
         {Card_data.map((item, index) => (
           <Card
             key={index}
@@ -95,7 +129,7 @@ function App() {
             description={item.description}
           />
         ))}
-      </div>
+      </div> */}
     </>
   )
 }
