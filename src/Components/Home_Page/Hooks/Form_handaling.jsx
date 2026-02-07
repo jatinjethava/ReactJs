@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { X } from 'lucide-react'
 import custom from '../../../CSS/button.module.css'
 
 const Form_handaling = () => {
@@ -42,11 +43,17 @@ const Form_handaling = () => {
         }
     }
 
+    const deleteNote = (id) => {
+        const cpyTask = [...task];
+        cpyTask.splice(id, 1);
+        setTask(cpyTask);
+    }
+
     return (
         <>
 
             <div className='min-h-screen text-center flex flex-col lg:flex-row justify-center items-start gap-5 p-4'>
-                <form className='w-full sm:w-96 p-5 m-3 border-2 border-gray-300 rounded-md flex gap-4 flex-col' onSubmit={form_handler}>
+                <form className='w-full sm:w-96 p-5 border-2 border-gray-300 rounded-md flex gap-4 flex-col' onSubmit={form_handler}>
                     <div className='p-5 '>
                         <div className='py-2'>
                             <input
@@ -80,6 +87,7 @@ const Form_handaling = () => {
                             task.length > 0 ? (
                                 task.map((item, index) => (
                                     <div key={index} className='w-full sm:w-72 min-h-40 p-4 flex flex-col justify-start items-start bg-gray-200 rounded-2xl shadow-2xl shadow-neutral-200'>
+                                        <button onClick={(e) => deleteNote(index)} className='cursor-pointer'><X color='gray' /></button>
                                         <h1 className={custom.underLine + ' text-sm md:text-base'}>{item.title}</h1>
                                         <p className='p-2 text-start text-sm md:text-base overflow-hidden'>{item.Discription}</p>
                                     </div>
