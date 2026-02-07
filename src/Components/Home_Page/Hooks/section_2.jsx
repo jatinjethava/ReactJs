@@ -1,9 +1,13 @@
 import React from 'react'
-import Input from './input'
+import Usestate from './UseState'
+import Form_handaling from './Form_handaling'
 
 const Section_2 = () => {
     return (
-        <Input />
+        <>
+            {/* <Usestate /> */}
+            <Form_handaling />
+        </>
     )
 }
 
