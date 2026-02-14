@@ -16,6 +16,22 @@
     border: 1px solid #000000;
 }
 
+.red_btn {
+    color: rgb(0, 0, 0);
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #ff0000;
+    transition: all 0.3s ease;
+}
+
+.red_btn:hover {
+    background-color: #d62929;
+    color: #ffffff;
+}
+
 .shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -28,4 +44,19 @@
     margin: 0 auto;
     margin-top: 10px;
     background-color: #585858c1;
+}
+
+.redUnderLine::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 3px;
+    transition: width 0.3s ease;
+}
+
+.redUnderLine:hover::after {
+    width: 100%;
+    background-color: #ff0000af;
 }
