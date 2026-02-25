@@ -12,19 +12,19 @@ const Navbar = () => {
                 </div>
                 <div className='flex flex-wrap gap-2 space-x-5'>
                     <Link to={"/"} className={preCss.redUnderLine}>
-                        <a className='hover:text-red-500'>Home</a>
+                        Home
                     </Link>
                     <Link to={"/about"} className={preCss.redUnderLine}>
-                        <a className='hover:text-red-500'>About</a>
+                        About
                     </Link>
                     <Link to={"/product"} className={preCss.redUnderLine}>
-                        <a className='hover:text-red-500'>Product</a>
+                        Product
                     </Link>
                     <Link to={"/contact"} className={preCss.redUnderLine}>
-                        <a className='hover:text-red-500'>Contact</a>
+                        Contact
                     </Link>
                     <Link to={"/service"} className={preCss.redUnderLine}>
-                        <a className='hover:text-red-500'>Services</a>
+                        Services
                     </Link>
                 </div>
                 <div className='flex flex-wrap gap-5 justify-center'>
