@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar';
 import Products from './pages/Products';
 import Man from './pages/man';
 import Women from './pages/women';
+import NotFound from './pages/NotFound';
 
 const Routing = () => {
     return (
@@ -23,6 +24,7 @@ const Routing = () => {
                         <Route path="man" element={<Man />} />
                         <Route path="woman" element={<Women />} />
                     </Route>
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
             </div>
         </>

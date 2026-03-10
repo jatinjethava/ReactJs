@@ -5,6 +5,7 @@ import Section_1 from './Components/Home_Page/Section_1/section_1'
 import Section_2 from './Components/Home_Page/Hooks/section_2'
 import LocalStorage from './Components/localStorage/localStorage'
 import Routing from './Components/Route/Routing'
+import Navbar from './Components/ContexApi/navbar'
 
 function App() {
 
@@ -105,12 +106,15 @@ function App() {
 
   return (
     <>
-      <Routing />
+
+      {/* <Navbar /> */}
+
+      {/* <Routing /> */}
 
       {/* <LocalStorage /> */}
 
       {/* <Section_1 user={Users} /> */}
-      {/* <Section_2 /> */}
+      <Section_2 />
 
       {/* <div className='container'>
         <Card user={"Suzume"} image={"suzume.jpg"} />

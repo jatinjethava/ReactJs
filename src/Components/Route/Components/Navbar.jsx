@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Usestate } from 'react'
 import { Home } from "lucide-react";
 import { Link } from 'react-router-dom';
 import preCss from '../../../CSS/button.module.css';
 
 const Navbar = () => {
+
     return (
         <>
             <nav className='mx-10 my-2 flex flex-wrap justify-between items-center text-dark p-2  rounded-lg'>
